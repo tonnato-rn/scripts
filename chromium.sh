@@ -16,3 +16,5 @@ CHROMIUM_FLAGS="--enable-features=WebUIDarkMode --force-dark-mode"
 ' | sudo tee /etc/chromium-browser/customizations/dark > /dev/null
 
 sudo apt install -y chromium-browser
+
+echo 'CHROMIUM_FLAGS="--no-sandbox --test-type"' > /etc/chromium-browser/customizations/termux
